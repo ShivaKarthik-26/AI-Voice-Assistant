@@ -1,0 +1,7 @@
+ai-vaom/node_modules/
+ai-vaom/dist/
+ai-vaom/.local-preview.pid
+ai-vaom/.local-preview.log
+ai-vaom/.local-preview.err
+ai-vaom/.vite-dev.log
+ai-vaom/.vite-dev.err

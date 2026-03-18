@@ -1,0 +1,87 @@
+﻿:root {
+  --bg: #f4efe6;
+  --bg-deep: #eadfce;
+  --ink: #17303e;
+  --muted: #5f7077;
+  --sand: #f7c674;
+  --warm: #d65c38;
+  --panel: rgba(255, 252, 247, 0.88);
+  --line: rgba(17, 61, 77, 0.1);
+  --sans: "Aptos", "Trebuchet MS", "Segoe UI", sans-serif;
+  --heading: "Segoe UI Variable Display", "Aptos Display", "Trebuchet MS", sans-serif;
+
+  font-family: var(--sans);
+  line-height: 1.5;
+  font-weight: 400;
+  color: var(--ink);
+  background:
+    radial-gradient(circle at top left, rgba(247, 198, 116, 0.45), transparent 28%),
+    radial-gradient(circle at bottom right, rgba(19, 64, 78, 0.14), transparent 30%),
+    linear-gradient(180deg, var(--bg), var(--bg-deep));
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  min-width: 320px;
+  min-height: 100vh;
+}
+
+body,
+button,
+input {
+  font: inherit;
+}
+
+button,
+input {
+  outline: none;
+}
+
+#root {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+}
+
+h1,
+h2,
+h3 {
+  margin: 0;
+  color: var(--ink);
+  font-family: var(--heading);
+  line-height: 1.05;
+}
+
+h1 {
+  font-size: clamp(2.8rem, 5vw, 4.8rem);
+  letter-spacing: -0.05em;
+}
+
+h2 {
+  font-size: clamp(1.4rem, 2.5vw, 2rem);
+}
+
+h3 {
+  font-size: 1.05rem;
+}
+
+p {
+  margin: 0;
+}
+
+a {
+  color: inherit;
+}
+
